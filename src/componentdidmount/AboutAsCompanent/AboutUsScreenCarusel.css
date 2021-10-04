@@ -1,0 +1,80 @@
+.about-us-top-animation-section{
+    width: 610px;
+    height: 490px;
+    position: absolute;
+    right: 0%;
+    bottom: 9.2%;
+    top: 108px;
+    display: flex;
+    justify-content: end;
+    
+}
+.animation-carusel-img-section{
+    width: 555px;
+    height: 435px;
+    background: grey;
+    overflow: hidden;
+}
+.about-us-top-animation-section .animation-lina{
+    background:#1E4078;
+    position: absolute;
+}
+.about-us-top-animation-section .lina-top{
+    height: 191px;
+    width: 10px;
+    position: absolute;
+    /* top: 0; */
+    left: 0;
+}
+.about-us-top-animation-section .lina-bottom{
+    width: 191px;
+    height: 10px;
+    width: 191px;
+    bottom: 0;
+    right: 54px;
+    
+}
+.animation-carusel-slide{
+    overflow: hidden;
+    height: 435px;
+}
+.animation-carusel-img-flip{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background: pink;
+    background-repeat: no-repeat;
+
+}
+.animation-carusel-slide-wrapper{
+    width: 555px;
+    height: 435px;
+    background: grey;
+  
+}
+.animation-carusel-slide{
+    overflow: auto;
+    height: 100%;
+}
+.animation-carusel-lin{
+    width: 100%;
+    position: relative;
+    /* height: 435px; */
+    height: 100%;
+}
+.animation-carusel-slide::-webkit-scrollbar{
+    width: 8px;
+    height: 5px;
+    display: none;
+}
+.animation-carusel-lin::-webkit-scrollbar-thumb {
+    background: #77ab85;
+    background: linear-gradient(to right, #3e3d3d, #000000);
+    border-radius: 16px 0px 0px 16px;
+}
+.animation-carusel-lin::-webkit-scrollbar:hover {
+    /*box-shadow: 0px 2px 1px 2px #5a5d648a ;*/
+    width: 0px;
+    height: 8px;
+    background-color: #ced0d44f;
+}

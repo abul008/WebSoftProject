@@ -1,0 +1,12 @@
+{
+    "adminPanelInfoDashboard":[  
+        "Home",
+        "Analytics",
+        "Sales"
+    ],
+    "adminPanelQuickManu":[
+        "Products",
+        "Transactions",
+        "Reports"
+    ]
+}

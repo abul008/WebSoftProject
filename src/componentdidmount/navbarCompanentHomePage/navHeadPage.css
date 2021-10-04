@@ -1,0 +1,70 @@
+.navbar-wrapper-page li{
+    list-style: none;
+}
+.navbar-wrapper-page li a{
+    text-decoration: none;
+}
+.navbar-wrapper-page{
+   height: 160px;
+   width: 100%;
+}
+.navbar-wrapper-page .navbar-top-section{
+    height: 75px;
+    background: white;
+    display: flex;
+    justify-content: center;
+}
+.navbar-wrapper-page .navbar-top-section .navbar-top-section-cantrol{
+    width: 93.611111%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar-top-manu-logo{
+    width: 210px;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar-top-contact-information ul{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.navbar-top-contact-information ul li{
+    list-style: none;
+    width: 162px;
+    height: 20px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19.5px;
+    color: #1E4078;
+}
+.navbar-top-contact-information ul li:nth-child(3){
+    width: 177px;
+}
+.navbar-wrapper-page .navbar-manu-section{
+    height: 65px;
+    background: #1E4078;
+    display: flex;
+    justify-content: center;
+}
+.navbar-wrapper-page .navbar-manu-section ul{
+    display: flex;
+    align-items: center;
+    width: 50%;
+    justify-content: space-between;
+
+}
+.navbar-wrapper-page .navbar-manu-section ul li{
+    height: 20px;
+    font-size: 16px;
+    
+    
+}
+.navbar-wrapper-page .navbar-manu-section ul li a{
+    font-weight: 500;
+    line-height: 19.5px;
+    color: white;
+    font-size: 16px;
+}

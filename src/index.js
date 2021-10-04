@@ -1,0 +1,39 @@
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
+import reportWebVitals from './reportWebVitals';
+import allReducers from "./componentdidmount/redux/reducers"
+import {Provider} from 'react-redux';
+import {createStore , applyMiddleware} from "redux";
+import thunk from "redux-thunk";
+import axios from 'axios';
+import './i18n';
+import i18next from "i18next"
+
+
+const lang = localStorage.getItem('lang') || 'am';
+axios.defaults.baseURL = 'http://localhost:9000/';
+i18next.changeLanguage(lang)
+axios.defaults.headers.common["Accept-Language"] = localStorage.getItem(lang) 
+
+// const lang = localStorage.getItem('lang') || 'am';
+// axios.defaults.baseURL = 'http://localhost:9000/';
+// i18next.changeLanguage(lang)
+// axios.defaults.headers.common["Accept-Language"] = localStorage.getItem(lang) 
+
+const store =  createStore(allReducers,applyMiddleware(thunk));
+
+ReactDOM.render(
+  <React.StrictMode>
+    <Provider store={store}>
+    <App />
+    </Provider>
+  </React.StrictMode>,
+  document.getElementById('root')
+);
+
+// If you want to start measuring performance in your app, pass a function
+// to log results (for example: reportWebVitals(console.log))
+// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
+reportWebVitals();
